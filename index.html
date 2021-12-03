@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<style>
+
+	img{
+		height: auto;
+	}
+	.img_con img{
+		height: 200px;
+	}
+	.jumbotron{
+		padding: 50px;
+		background-position: center;
+		background-size: cover;
+		height: 400px;
+	}
+	.jum1{
+		background-image: url(https://www.pexels.com/photo/1640777/download/);
+	}
+	.jum2{
+		background-image: url(https://naurok-test2.nyc3.digitaloceanspaces.com/1440845/images/195849_1634481189.jpg);
+	}
+	.jum3{
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg);
+	}
+	.album{
+		padding: 10px 0px 40px 0px;
+	}
+	main{
+		padding-bottom: 50px;
+	}
+	
+	.jumbotron:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.5);
+		z-index: 2;
+	}
+
+	.jumbotron div {
+		position: relative;
+		z-index: 3;
+		color: #fff;
+	}
+
+	.carousel-c{
+		z-index: 5;
+	}
+
+</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">Resto</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" href="#main-menu">Меню</a>
+						<a class="nav-link" href="#questions">Ответы на вопросы</a>
+						<a class="nav-link"  href="#order">Заказать доставку</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				
+				<div class="carousel-item active">
+					<div class="jumbotron jum1">
+						<div class="container d-flex h-100">
+							<div class="row justify-content-center align-self-center">
+								<h1 class="display-3">Салат "Греческие мотивы"</h1>
+								<p>Очень вкусный, сытный, постный и полезный вариант греческого салата с капустой к вашему столу. Море овощей, а еще соевый сыр тофу. Не салат, а чистое здоровье и гамма вкуса.</p>
+								<p><a class="btn btn-primary btn-lg" href="#" role="button">Узнать больше &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="jumbotron jum2">
+						<div class="container d-flex h-100">
+							<div class="row justify-content-center align-self-center">
+								<h1 class="display-3">Мясные блюда</h1>
+								<p>Мясо — древнейший пищевой продукт, используемый человеком. Его широкое кулинарное применение насчитывает столько же тысячелетий, сколько и использование огня. </p>
+								<p><a class="btn btn-primary btn-lg" href="#" role="button">Узнать больше &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="jumbotron jum3">
+						<div class="container d-flex h-100">
+							<div class="row justify-content-center align-self-center">
+								<h1 class="display-3">Асорти</h1>
+								<p>Новинка в нашем меню</p>
+								<p><a class="btn btn-primary btn-lg" href="#" role="button">Узнать больше &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev carousel-c" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next carousel-c" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<div class="album bg-light" id="main-menu">
+			<div class="container">
+				<div style="padding: 20px" class="container text-center">
+					<h4>Основное меню</h4>
+				</div>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="img_con">
+								<img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg" height="200" class="d-block w-100" alt="food">	
+							</div>
+							<div class="card-body">
+								<p class="card-text">Га́мбурґер — вид сендвіча, що складається з рубаної котлети, поданої всередині розрізаної булки. На додаток до м'яса ...</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="img_con">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8yMIHkxs901EzRfpvMq6gIEfDADZcfbJxLw&usqp=CAU" height="200"  class="d-block w-100" alt="food">
+							</div>
+							<div class="card-body">
+								<p class="card-text">Жареный стейк из красной благородной рыбы – блюдо одновременно и простое, и достаточно изысканное. </p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="img_con">
+								<img src="https://a.cdn-hotels.com/gdcs/production149/d1480/b0946f24-cd9a-4ba7-ac7c-bef8fdb51a7a.jpg" class="d-block w-100" height="200"  alt="food">
+							</div>
+							<div class="card-body">
+								<p class="card-text">Рисовая лапша в остром кокосовом супе карри с креветками, рыбными котлетами, яйцом и куриным мясом - нечто...  </p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="img_con">
+								<img src="https://www.wbcsd.org/var/site/storage/images/media/images/fresh_pa/80809-2-eng-GB/FRESH_PA_i1140.jpg" height="200" class="d-block w-100" alt="food">	
+							</div>
+							<div class="card-body">
+								<p class="card-text">Мясо на гриле, приготовленное на вертеле, подается с рисовым пирогом (кетупат), арахисовым соусом и соусом из огурцов и чили.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="img_con">
+								<img src="https://www.kikkoman.com/en/foodforum/img/feature-35-2-01.png" height="200"  class="d-block w-100" alt="food">
+							</div>
+							<div class="card-body">
+								<p class="card-text">В наших текущих сериях мы исследуем некоторые из разнообразных международных кухонь, которые широко используются в Японии.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="img_con">
+								<img src="https://img.bestrecipes.com.au/GmWTemLJ/w643-h428-cfill-q90/br/2019/02/1980-crunchy-chicken-twisties-drumsticks-951509-1.jpg" class="d-block w-100" height="200"  alt="food">
+							</div>
+							<div class="card-body">
+								<p class="card-text">Мясо чарси - популярное сингапурское блюдо китайского происхождения, состоящее из жареной на гриле красной свинины.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="question_Block" id="questions">
+			<div class="container">
+				<div style="padding: 20px" class="container text-center">
+					<h3 >Вопросы и ответы</h3>
+				</div>
+				
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Как долго мы на рынке?
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>На рынке мы уже 10 лет.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Как много ну нас сотрудников?
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Наша команда состоит из более чем 1800 экспертов.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Где мы находимся?
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Мы находимся там где вам удобно.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="form_order" id="order">
+			<div style="padding: 20px" class="container text-center">
+					<h3>Заказать доставку</h3>
+				</div>
+			<div class="container">
+				<form class="needs-validation" novalidate>
+					<div class="row p-3 justify-content-center">
+						<div class="col-md-5 col-sm-8">
+							<label for="username" class="form-label">ФИО</label>
+							<div class="input-group has-validation">
+								<input type="text" class="form-control" id="username" placeholder="ФИО" required>
+							</div>
+						</div>
+					</div>
+					<div class="row p-3 justify-content-center">
+							<div class="col-md-5 col-sm-8">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="you@example.com">
+						</div>
+					</div>
+
+					<hr class="my-4">
+
+					<div class="row p-3 justify-content-center">
+						<div class="col-md-5 col-sm-8">
+							<label for="country" class="form-label">Страна</label>
+							<select class="form-select" id="country" required>
+								<option value="">Выбирите...</option>
+								<option>Бельгия</option>
+								<option>Венгрия</option>
+								<option>Китай</option>
+								<option>Ливия</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-3 justify-content-center">
+						<div class="col-md-5 col-sm-8">
+							<label for="state" class="form-label">Город</label>
+							<select class="form-select" id="state" required>
+								<option value="">Выбирите...</option>
+								<option>Нью-Йорк</option>
+								<option>Москва</option>
+								<option>Токио</option>
+								<option>Сингапур</option>
+							</select>
+						</div>
+					</div>
+
+
+					<div class="row p-3 justify-content-center">
+							<div class="col-md-5 col-sm-8">
+							<label for="email" class="form-label">Полный адрес</label>
+							<input type="text" class="form-control" id="email" placeholder="адрес">
+						</div>
+					</div>
+
+					<hr class="my-4">
+
+					<div class="row p-3 justify-content-center">
+						<div class="col-md-5 col-sm-8">
+							<h6>Способ оплаты</h6>
+							<div class="form-check">
+								<input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+								<label class="form-check-label" for="credit">Наличные</label>
+							</div>
+							<div class="form-check">
+								<input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+								<label class="form-check-label" for="debit">Кредитная карта</label>
+							</div>
+							<div class="form-check">
+								<input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+								<label class="form-check-label" for="paypal">PayPal</label>
+							</div>
+						</div>
+					</div>
+
+
+					<hr class="my-4">
+
+					<div class="row p-3 justify-content-center">
+						<div class="col-md-5 col-sm-8">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="same-address">
+								<label class="form-check-label" for="same-address">Я согласен с условиями</label>
+							</div>
+						</div>
+					</div>		
+
+					<div class="row justify-content-center">
+						<div class="col-md-3 col-sm-8">
+							<button class="w-100 h-70 btn btn-primary btn-lg" type="submit">Заказать</button>
+						</div>
+					</div>	
+				</form>
+			</div>
+			
+		</div>
+
+	</main>
+
+
+	<footer class="text-muted bg-dark py-5">
+		<div class="container ">
+			<p class="float-end mb-1">
+				<a href="#">В начало</a>
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
